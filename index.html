@@ -6,23 +6,26 @@
     <title>Document</title>
    
     <style>
+        html{
+            height: 100%;
+        }
         body{
             background-color: black;
             display: flex;
+            justify-content: center;
+            height: 100%;
+            align-items: center;
+
         }
         label{
             color: white;
         }
         form{
             flex: 1;
-            margin: 10px;
+            margin-bottom:100px;
+            /* align-content: center; */
         }
-        /* label[for="email"]{
-            margin: 100px;
-        }
-        label[for="date"]{
-            margin: 100px;
-        } */
+        
         #email{
             margin: 10px;
             margin-bottom: 12px;
@@ -34,9 +37,9 @@
             margin-left:35px;
             padding-left: 20px;
         }
-        div{
+        div .bigbox1{
             flex: auto;
-
+            /* align-content: center; */
         }
 
 
@@ -44,17 +47,18 @@
     </style>
 </head>
 <body>
+    <div class="bigbox1">
     <!-- <h1>This is the starting of this project ,will continue soon . </h1> -->
     <form>
-        <div class="1name">
+        <div class="name1">
             <label for="input" id="labelName">Full Name:</label>
             <input type="text" id="name">
         </div>
-        <div class="1email">
+        <div class="email1">
             <label for="input">Email ID:</label>
             <input type="email" id="email">
         </div>
-        <div class="1dob">
+        <div class="dob1">
             <label for="input">DOB:</label>
             <input type="date" id="dob">
             <p>This is required to verify the age</p>
@@ -63,7 +67,7 @@
             <button type="submit" id="submit" disabled >Submit</button>
         </div>
     </form>
-    
+</div>
     <script src="script.js"></script>
 </body>
 </html>
