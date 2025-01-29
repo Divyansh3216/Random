@@ -10,7 +10,7 @@ inputStuff.addEventListener('input',requiredFunc);
 
 subButton.addEventListener('click',(event)=>{
     event.preventDefault();
-    const target="/thirdPage/page3.html";
+    const target="/fifthPage/page5.html";
     window.location.href=target;
 })
 
